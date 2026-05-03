@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Connect with Saeeda — Tell me what you're dreaming of. Handcrafted event websites from Yume Studio."
+    />
+    <meta
+      name="keywords"
+      content="contact, get in touch, event website, handcrafted design"
+    />
+    <meta name="author" content="Saeeda · Yume Studio" />
+    <meta property="og:title" content="Connect — Yume Studio" />
+    <meta
+      property="og:description"
+      content="Tell me what you're dreaming of."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <title>Connect — Yume Studio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- COOKIE BANNER -->
+    <div class="cookie-banner" id="cookieBanner">
+      <p>
+        This site uses cookies to improve your experience.
+        <a href="#">Learn more</a>
+      </p>
+      <div class="cookie-actions">
+        <button class="cookie-decline" id="cookieDecline">Decline</button>
+        <button class="cookie-accept" id="cookieAccept">Accept</button>
+      </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav id="nav" class="main-nav">
+      <a href="index.html" class="nav-logo">Yume</a>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+        <a href="connect.html" class="nav-cta">Connect</a>
+        <button class="nav-burger" id="navBurger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="index.html" class="mobile-link">Home</a></li>
+        <li><a href="portfolio.html" class="mobile-link">Portfolio</a></li>
+        <li><a href="about.html" class="mobile-link">About</a></li>
+        <li><a href="pricing.html" class="mobile-link">Pricing</a></li>
+        <li><a href="connect.html" class="mobile-link">Connect</a></li>
+      </ul>
+    </div>
+
+    <!-- CONNECT SECTION -->
+    <section class="connect-section">
+      <div class="connect-content fade-up">
+        <h1>Tell me what you're dreaming of.</h1>
+        <p class="connect-intro">
+          I read every message. Let's start a conversation about your vision,
+          your event, and what we can build together.
+        </p>
+
+        <form class="connect-form" id="connectForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="event-type">Type of Event</label>
+            <select id="event-type" name="event-type" required>
+              <option value="">Select an event type</option>
+              <option value="wedding">Wedding</option>
+              <option value="gala">Gala</option>
+              <option value="conference">Conference</option>
+              <option value="product-launch">Product Launch</option>
+              <option value="ceremony">Ceremony</option>
+              <option value="cultural-event">Cultural Event</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="event-date">Event Date</label>
+            <input type="date" id="event-date" name="event-date" required />
+          </div>
+
+          <div class="form-group full-width">
+            <label for="vision">Tell me about your vision</label>
+            <textarea
+              id="vision"
+              name="vision"
+              placeholder="What are you dreaming of? Tell me about the feeling, the story, and what matters most to you."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="form-submit">Send Message</button>
+        </form>
+
+        <div class="form-message" id="formMessage" style="display: none"></div>
+
+        <div class="connect-info">
+          <p><strong>Based in Iceland · Available worldwide</strong></p>
+          <p>Response time: Within 48 hours.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-content">
+        <a href="index.html" class="footer-logo">Yume Studio</a>
+        <div class="footer-links">
+          <a href="portfolio.html">Portfolio</a>
+          <a href="about.html">About</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="connect.html">Connect</a>
+        </div>
+        <span class="footer-copy"
+          >© 2025 Yume Studio · Built with care, for the moments that
+          matter</span
+        >
+      </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      ↑
+    </button>
+
+    <script src="main.js"></script>
+  </body>
+</html>

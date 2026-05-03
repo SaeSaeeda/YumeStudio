@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Yume Studio — Handcrafted websites for life's most meaningful moments. Events, weddings, galas, and ceremonies. Based in Iceland, available worldwide. From €300."/>
+  <meta name="keywords" content="web design, event website, wedding website, handcrafted websites, bespoke web design, Iceland"/>
+  <meta name="author" content="Saeeda · Yume Studio"/>
+  <meta property="og:title" content="Yume Studio — Handcrafted Event Websites"/>
+  <meta property="og:description" content="Handcrafted websites for life's most meaningful moments. From €300."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://yumestudio.com"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Yume Studio — Handcrafted Event Websites"/>
+  <meta name="twitter:description" content="Handcrafted websites for life's most meaningful moments."/>
+  <title>Yume Studio — Handcrafted Websites for Meaningful Moments</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <!-- COOKIE BANNER -->
+  <div class="cookie-banner" id="cookieBanner">
+    <p>This site uses cookies to improve your experience. <a href="#">Learn more</a></p>
+    <div class="cookie-actions">
+      <button class="cookie-decline" id="cookieDecline">Decline</button>
+      <button class="cookie-accept" id="cookieAccept">Accept</button>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav id="nav" class="main-nav">
+    <a href="index.html" class="nav-logo">Yume</a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+      </ul>
+      <a href="connect.html" class="nav-cta">Connect</a>
+      <button class="nav-burger" id="navBurger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="navBurger" aria-label="Close menu">✕</button>
+    <ul>
+      <li><a href="portfolio.html" class="mobile-link">Portfolio</a></li>
+      <li><a href="about.html" class="mobile-link">About</a></li>
+      <li><a href="pricing.html" class="mobile-link">Pricing</a></li>
+      <li><a href="connect.html" class="mobile-link">Connect</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+
+    <!-- Watercolour blobs -->
+    <div class="hero-blobs">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="blob blob-4"></div>
+    </div>
+
+    <!-- Sakura petals -->
+    <div class="sakura-petals">
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+    </div>
+
+    <!-- Sakura branch SVG — top right -->
+    <svg class="sakura-branch" viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <!-- Main branch coming from right, going diagonally down-left -->
+      <path d="M420 -20 Q380 80 340 160 Q300 240 260 320 Q220 380 180 450" stroke="#8B6F47" stroke-width="3.2" stroke-linecap="round" opacity="0.6"/>
+      <!-- Large left branch 1 (upper) -->
+      <path d="M380 60 Q340 45 290 42 Q260 42 230 50" stroke="#9B7E57" stroke-width="2.4" stroke-linecap="round" opacity="0.5"/>
+      <!-- Sub-branches from branch 1 -->
+      <path d="M320 48 Q300 35 280 30" stroke="#9B7E57" stroke-width="1.6" stroke-linecap="round" opacity="0.35"/>
+      <path d="M300 45 Q275 50 255 58" stroke="#9B7E57" stroke-width="1.4" stroke-linecap="round" opacity="0.3"/>
+      <!-- Large left branch 2 (middle-upper) -->
+      <path d="M350 130 Q300 110 250 105 Q210 105 170 120" stroke="#A0845D" stroke-width="2.6" stroke-linecap="round" opacity="0.5"/>
+      <!-- Sub-branches from branch 2 -->
+      <path d="M310 120 Q280 105 260 98" stroke="#A0845D" stroke-width="1.5" stroke-linecap="round" opacity="0.32"/>
+      <path d="M275 115 Q245 125 220 138" stroke="#A0845D" stroke-width="1.4" stroke-linecap="round" opacity="0.28"/>
+      <!-- Large left branch 3 (middle) -->
+      <path d="M320 200 Q270 185 210 185 Q160 185 120 205" stroke="#9B7E57" stroke-width="2.4" stroke-linecap="round" opacity="0.48"/>
+      <!-- Sub-branches from branch 3 -->
+      <path d="M270 192 Q240 180 215 175" stroke="#9B7E57" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+      <path d="M240 188 Q205 200 175 220" stroke="#9B7E57" stroke-width="1.3" stroke-linecap="round" opacity="0.26"/>
+      <!-- Large left branch 4 (lower) -->
+      <path d="M290 280 Q240 270 180 280 Q130 290 85 320" stroke="#8B7557" stroke-width="2.2" stroke-linecap="round" opacity="0.45"/>
+      <!-- Sub-branches from branch 4 -->
+      <path d="M240 278 Q210 268 185 265" stroke="#8B7557" stroke-width="1.4" stroke-linecap="round" opacity="0.28"/>
+      <path d="M200 278 Q165 290 140 310" stroke="#8B7557" stroke-width="1.3" stroke-linecap="round" opacity="0.25"/>
+      <!-- Sakura blossoms (5-petal clusters) -->
+      <!-- Blossom on main trunk 1 -->
+      <g transform="translate(340,150)" opacity="0.55">
+        <circle cx="0" cy="-6" r="3.5" fill="#F5C6C0"/>
+        <circle cx="5.5" cy="-2" r="3.5" fill="#F5C6C0"/>
+        <circle cx="3.4" cy="4.5" r="3.5" fill="#F5C6C0"/>
+        <circle cx="-3.4" cy="4.5" r="3.5" fill="#F5C6C0"/>
+        <circle cx="-5.5" cy="-2" r="3.5" fill="#F5C6C0"/>
+        <circle cx="0" cy="0" r="1.8" fill="#C98B3A" opacity="0.6"/>
+      </g>
+      <!-- Blossom on left branch 1 -->
+      <g transform="translate(280,50)" opacity="0.5">
+        <circle cx="0" cy="-5" r="3" fill="#F2A97E"/>
+        <circle cx="4.7" cy="-1.5" r="3" fill="#F2A97E"/>
+        <circle cx="2.9" cy="4" r="3" fill="#F2A97E"/>
+        <circle cx="-2.9" cy="4" r="3" fill="#F2A97E"/>
+        <circle cx="-4.7" cy="-1.5" r="3" fill="#F2A97E"/>
+        <circle cx="0" cy="0" r="1.5" fill="#C98B3A" opacity="0.55"/>
+      </g>
+      <!-- Blossom on left branch 2 -->
+      <g transform="translate(220,115)" opacity="0.45">
+        <circle cx="0" cy="-5.5" r="3.2" fill="#F5C6C0"/>
+        <circle cx="5" cy="-1.5" r="3.2" fill="#F5C6C0"/>
+        <circle cx="3.1" cy="4.2" r="3.2" fill="#F5C6C0"/>
+        <circle cx="-3.1" cy="4.2" r="3.2" fill="#F5C6C0"/>
+        <circle cx="-5" cy="-1.5" r="3.2" fill="#F5C6C0"/>
+        <circle cx="0" cy="0" r="1.6" fill="#C98B3A" opacity="0.5"/>
+      </g>
+      <!-- Blossom on left branch 3 -->
+      <g transform="translate(160,200)" opacity="0.42">
+        <circle cx="0" cy="-4.5" r="2.8" fill="#F2A97E"/>
+        <circle cx="4.3" cy="-1.4" r="2.8" fill="#F2A97E"/>
+        <circle cx="2.6" cy="3.8" r="2.8" fill="#F2A97E"/>
+        <circle cx="-2.6" cy="3.8" r="2.8" fill="#F2A97E"/>
+        <circle cx="-4.3" cy="-1.4" r="2.8" fill="#F2A97E"/>
+        <circle cx="0" cy="0" r="1.4" fill="#C98B3A" opacity="0.48"/>
+      </g>
+      <!-- Scattered petals -->
+      <ellipse cx="360" cy="80" rx="5" ry="7.5" fill="#F5C6C0" opacity="0.35" transform="rotate(25 360 80)"/>
+      <ellipse cx="250" cy="160" rx="4" ry="6" fill="#F2A97E" opacity="0.28" transform="rotate(-18 250 160)"/>
+      <ellipse cx="180" cy="250" rx="4.5" ry="7" fill="#F5C6C0" opacity="0.25" transform="rotate(40 180 250)"/>
+    </svg>
+    
+    <!-- Soft fading circle background -->
+    <div class="hero-circle-fade"></div>
+      <ellipse cx="220" cy="88" rx="3.5" ry="5.5" fill="#F2A97E" opacity="0.25" transform="rotate(-15 220 88)"/>
+      <ellipse cx="140" cy="175" rx="3" ry="5" fill="#F5C6C0" opacity="0.2" transform="rotate(35 140 175)"/>
+    </svg>
+
+    <span class="hero-label">Web Design · Iceland</span>
+
+    <div class="hero-content fade-up">
+      <p class="hero-kicker">Yume Studio</p>
+      <h1>
+        Handcrafted websites<br/>
+        for moments<br/>
+        <em>that matter.</em>
+      </h1>
+      <p class="hero-sub">Weddings, galas, conferences, and every occasion that deserves its own beautiful corner of the internet.</p>
+      <div class="hero-actions">
+        <a href="portfolio.html" class="btn-primary">See my work</a>
+        <a href="connect.html" class="btn-ghost">Tell me what you're dreaming of →</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span class="marquee-item">Weddings <span class="marquee-dot">·</span></span>
+      <span class="marquee-item">Galas <span class="marquee-dot">·</span></span>
+      <span class="marquee-item">Conferences <span class="marquee-dot">·</span></span>
+      <span class="marquee-item">Ceremonies <span class="marquee-dot">·</span></span>
+      <span class="marquee-item">Product Launches <span class="marquee-dot">·</span></span>
+      <span class="marquee-item">Cultural Events <span class="marquee-dot">·</span></span>
+      <span class="marquee-item">Seminars <span class="marquee-dot">·</span></span>
+      <span class="marquee-item">Community Gatherings <span class="marquee-dot">·</span></span>
+      <span class="marquee-item">Weddings <span class="marquee-dot">·</span></span>
+      <span class="marquee-item">Galas <span class="marquee-dot">·</span></span>
+      <span class="marquee-item">Conferences <span class="marquee-dot">·</span></span>
+      <span class="marquee-item">Ceremonies <span class="marquee-dot">·</span></span>
+      <span class="marquee-item">Product Launches <span class="marquee-dot">·</span></span>
+      <span class="marquee-item">Cultural Events <span class="marquee-dot">·</span></span>
+      <span class="marquee-item">Seminars <span class="marquee-dot">·</span></span>
+      <span class="marquee-item">Community Gatherings <span class="marquee-dot">·</span></span>
+    </div>
+  </div>
+
+  <!-- WORK TEASER -->
+  <section class="work-teaser" id="work">
+    <div class="section-header fade-up">
+      <div>
+        <p class="section-eyebrow">Selected work</p>
+        <h2>Moments made real.</h2>
+      </div>
+      <a href="portfolio.html" class="section-link">View all work →</a>
+    </div>
+    <div class="work-grid">
+      <a href="https://arioba.com" target="_blank" rel="noopener" class="work-card fade-up">
+        <div class="work-card-image">
+          <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Farioba.com?w=1400" alt="Arioba — Studio website" loading="lazy"/>
+        </div>
+        <div class="work-card-meta">
+          <p class="work-tag">Studio · 2024</p>
+          <h3 class="work-title">Arioba</h3>
+          <p class="work-desc">A creative studio brought to life online — clean, elegant, and true to the brand.</p>
+          <span class="work-link">Visit site →</span>
+        </div>
+      </a>
+      <a href="https://anchorher.netlify.app" target="_blank" rel="noopener" class="work-card fade-up">
+        <div class="work-card-image">
+          <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fanchorher.netlify.app?w=1400" alt="Anchor Her — Women's summit" loading="lazy"/>
+        </div>
+        <div class="work-card-meta">
+          <p class="work-tag">Women's Summit · 2026</p>
+          <h3 class="work-title">Anchor Her</h3>
+          <p class="work-desc">A summit for women gathering to grow — powerful, warm, and purposefully built.</p>
+          <span class="work-link">Visit site →</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ABOUT TEASER -->
+  <section class="about-teaser" id="about-teaser">
+    <div class="about-teaser-inner">
+      <div class="about-teaser-text fade-up">
+        <p class="section-eyebrow">About Saeeda</p>
+        <h2>I build what you <em>feel</em>, not just what you say.</h2>
+        <p>Before I write a line of code, I build a scene. I sit with your vision — your event, your feeling, your people — and I imagine it. I'm an overthinker, and in this work, that's a gift.</p>
+        <a href="about.html" class="section-link">Read more about me →</a>
+      </div>
+      <div class="about-teaser-visual fade-up">
+        <svg viewBox="0 0 300 340" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- Soft background circle -->
+          <circle cx="150" cy="170" r="140" fill="#F5C6C0" opacity="0.18"/>
+          <circle cx="150" cy="170" r="110" fill="#E8F2F8" opacity="0.22"/>
+          <!-- Monogram -->
+          <text x="150" y="210" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="130" font-weight="300" fill="#C98B3A" opacity="0.22">S</text>
+          <!-- Sakura branch overlay -->
+          <path d="M60 60 C90 100 120 130 150 170 C180 210 200 240 230 290" stroke="#C9939A" stroke-width="1.2" stroke-linecap="round" opacity="0.3"/>
+          <path d="M90 95 C75 80 55 76 42 80" stroke="#C9939A" stroke-width="0.9" stroke-linecap="round" opacity="0.25"/>
+          <path d="M120 135 C135 120 152 116 165 120" stroke="#C9939A" stroke-width="0.9" stroke-linecap="round" opacity="0.25"/>
+          <!-- Small blossoms -->
+          <g transform="translate(42,79)" opacity="0.45">
+            <circle cx="0" cy="-4" r="2.5" fill="#F5C6C0"/>
+            <circle cx="3.8" cy="-1.2" r="2.5" fill="#F5C6C0"/>
+            <circle cx="2.3" cy="3.2" r="2.5" fill="#F5C6C0"/>
+            <circle cx="-2.3" cy="3.2" r="2.5" fill="#F5C6C0"/>
+            <circle cx="-3.8" cy="-1.2" r="2.5" fill="#F5C6C0"/>
+            <circle cx="0" cy="0" r="1.2" fill="#C98B3A" opacity="0.5"/>
+          </g>
+          <g transform="translate(166,120)" opacity="0.4">
+            <circle cx="0" cy="-4" r="2.2" fill="#F2A97E"/>
+            <circle cx="3.4" cy="-1.2" r="2.2" fill="#F2A97E"/>
+            <circle cx="2" cy="3" r="2.2" fill="#F2A97E"/>
+            <circle cx="-2" cy="3" r="2.2" fill="#F2A97E"/>
+            <circle cx="-3.4" cy="-1.2" r="2.2" fill="#F2A97E"/>
+            <circle cx="0" cy="0" r="1" fill="#C98B3A" opacity="0.5"/>
+          </g>
+          <!-- Floating petals -->
+          <ellipse cx="190" cy="80" rx="4" ry="6" fill="#F5C6C0" opacity="0.22" transform="rotate(25 190 80)"/>
+          <ellipse cx="80" cy="200" rx="3" ry="5" fill="#F2A97E" opacity="0.2" transform="rotate(-20 80 200)"/>
+          <ellipse cx="240" cy="160" rx="3.5" ry="5.5" fill="#F5C6C0" opacity="0.18" transform="rotate(40 240 160)"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="section-header fade-up">
+      <div>
+        <p class="section-eyebrow">What I build</p>
+        <h2>Every occasion deserves<br/><em>its own space online.</em></h2>
+      </div>
+    </div>
+    <div class="services-list">
+      <div class="service-row fade-up">
+        <span class="service-num">01</span>
+        <div class="service-body">
+          <h3>Wedding & Ceremony Sites</h3>
+          <p>Timeless, elegant websites for weddings and celebrations — venue info, RSVP forms, countdowns, photo galleries and more.</p>
+        </div>
+      </div>
+      <div class="service-row fade-up">
+        <span class="service-num">02</span>
+        <div class="service-body">
+          <h3>Event Landing Pages</h3>
+          <p>A focused, beautiful page for your conference, gala, concert, or launch. Includes RSVP, schedule, and speaker sections.</p>
+        </div>
+      </div>
+      <div class="service-row fade-up">
+        <span class="service-num">03</span>
+        <div class="service-body">
+          <h3>Conference & Seminar Sites</h3>
+          <p>Multi-day event websites with speaker profiles, agenda timelines, ticketing links, and sponsor showcases.</p>
+        </div>
+      </div>
+      <div class="service-row fade-up">
+        <span class="service-num">04</span>
+        <div class="service-body">
+          <h3>Pop-up & Seasonal Sites</h3>
+          <p>Short-lived campaigns, seasonal promotions, pop-up launches — clean, fast sites that go live quickly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="section-header fade-up">
+      <div>
+        <p class="section-eyebrow">How it works</p>
+        <h2>Simple. Clear. Calm.</h2>
+      </div>
+    </div>
+    <div class="process-grid">
+      <div class="process-step fade-up">
+        <span class="step-num">01</span>
+        <h4>Discovery</h4>
+        <p>We chat about your event, vision, and audience. No commitment required — just a conversation.</p>
+      </div>
+      <div class="process-step fade-up">
+        <span class="step-num">02</span>
+        <h4>Proposal</h4>
+        <p>A clear scope, timeline, and price. No hidden fees, no surprises — ever.</p>
+      </div>
+      <div class="process-step fade-up">
+        <span class="step-num">03</span>
+        <h4>Design & Build</h4>
+        <p>I design and build, sharing progress at key milestones for your input along the way.</p>
+      </div>
+      <div class="process-step fade-up">
+        <span class="step-num">04</span>
+        <h4>Launch</h4>
+        <p>You review, we refine, and we go live — before your deadline, always.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="section-header fade-up">
+      <div>
+        <p class="section-eyebrow" style="color:var(--sakura-blush)">Kind words</p>
+        <h2 style="color:var(--sakura-white)">What clients say.</h2>
+      </div>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testi-card fade-up">
+        <p class="testi-quote">"Saeeda delivered something far beyond what we expected. The site perfectly captured the tone of our event and was ready well ahead of schedule."</p>
+        <div class="testi-author">
+          <div class="testi-initials">JA</div>
+          <div>
+            <p class="testi-name">Jane A.</p>
+            <p class="testi-role">Event Organiser, Reykjavík</p>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card fade-up">
+        <p class="testi-quote">"Our wedding website got so many compliments. The whole process was stress-free from start to finish. She understood exactly what we wanted."</p>
+        <div class="testi-author">
+          <div class="testi-initials">MK</div>
+          <div>
+            <p class="testi-name">Maria K.</p>
+            <p class="testi-role">Wedding Client</p>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card fade-up">
+        <p class="testi-quote">"We needed a conference site quickly and Saeeda turned it around in under two weeks. Clean, functional, and exactly what we had in mind."</p>
+        <div class="testi-author">
+          <div class="testi-initials">TS</div>
+          <div>
+            <p class="testi-name">Thomas S.</p>
+            <p class="testi-role">Conference Director</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <div class="final-cta-inner fade-up">
+      <p class="section-eyebrow">Ready to begin?</p>
+      <h2>Let's make something<br/><em>beautiful together.</em></h2>
+      <p>Tell me about your event. I read every message.</p>
+      <a href="connect.html" class="btn-primary">Tell me what you're dreaming of</a>
+    </div>
+
+    <!-- Sakura branch bottom left -->
+    <svg class="sakura-branch-bottom" viewBox="0 0 280 360" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M20 360 C50 300 90 250 130 190 C170 130 210 80 260 20" stroke="#C9939A" stroke-width="1.4" stroke-linecap="round" opacity="0.25"/>
+      <path d="M80 270 C65 255 48 250 34 254" stroke="#C9939A" stroke-width="1" stroke-linecap="round" opacity="0.2"/>
+      <path d="M120 210 C136 196 154 192 168 197" stroke="#C9939A" stroke-width="1" stroke-linecap="round" opacity="0.2"/>
+      <g transform="translate(33,253)" opacity="0.35">
+        <circle cx="0" cy="-4" r="2.5" fill="#F5C6C0"/>
+        <circle cx="3.8" cy="-1.2" r="2.5" fill="#F5C6C0"/>
+        <circle cx="2.3" cy="3.2" r="2.5" fill="#F5C6C0"/>
+        <circle cx="-2.3" cy="3.2" r="2.5" fill="#F5C6C0"/>
+        <circle cx="-3.8" cy="-1.2" r="2.5" fill="#F5C6C0"/>
+        <circle cx="0" cy="0" r="1.2" fill="#C98B3A" opacity="0.4"/>
+      </g>
+      <g transform="translate(169,197)" opacity="0.3">
+        <circle cx="0" cy="-4" r="2.2" fill="#F2A97E"/>
+        <circle cx="3.4" cy="-1.2" r="2.2" fill="#F2A97E"/>
+        <circle cx="2" cy="3" r="2.2" fill="#F2A97E"/>
+        <circle cx="-2" cy="3" r="2.2" fill="#F2A97E"/>
+        <circle cx="-3.4" cy="-1.2" r="2.2" fill="#F2A97E"/>
+        <circle cx="0" cy="0" r="1" fill="#C98B3A" opacity="0.4"/>
+      </g>
+    </svg>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <a href="index.html" class="footer-logo">Yume Studio</a>
+      <div class="footer-links">
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="connect.html">Connect</a>
+      </div>
+      <span class="footer-copy">© 2025 Yume Studio · Built with care, for the moments that matter</span>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="main.js"></script>
+</body>
+</html>
