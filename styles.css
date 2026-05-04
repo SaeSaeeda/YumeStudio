@@ -13,6 +13,7 @@
   --pale-sky: #e8f2f8;
   --warm-charcoal: #2e2118;
   --dusty-mauve: #c9939a;
+  --dark-golden: #a1610e;
 
   --font-serif: "Cormorant Garamond", Georgia, serif;
   --font-sans: "Jost", sans-serif;
@@ -648,7 +649,7 @@ p:last-child {
   font-size: 0.7rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: var(--dusty-mauve);
+  color: var(--dark-golden);
   margin-bottom: 1.4rem;
   opacity: 0.7;
 }
