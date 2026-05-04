@@ -431,7 +431,7 @@ p:last-child {
 
 /* Background image handled via pseudo-element so opacity is independent */
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background-image: url(./pngwing.com.png);
@@ -1089,6 +1089,138 @@ section
   font-weight: 400;
   color: var(--sakura-white);
   margin: 0 0 0.2rem;
+}
+
+/* ======= Mobile Nav Adjustments ======= */
+@media (max-width: 768px) {
+  /* Slim the header padding so nav doesn't feel chunky */
+  .main-nav {
+    padding: 0.6rem 4%;
+    background: transparent;
+    backdrop-filter: none;
+  }
+
+  /* Make the logo smaller and tighter */
+  .nav-logo {
+    font-size: 1.05rem;
+    padding: 0.2rem 0.25rem;
+  }
+
+  /* Reduce burger size and spacing */
+  .nav-burger {
+    padding: 6px;
+    border-radius: 6px;
+  }
+  .nav-burger span {
+    width: 18px;
+    height: 1.4px;
+  }
+
+  /* Hide desktop nav links (kept in DOM) and desktop CTA */
+  .nav-links {
+    display: none;
+  }
+  .nav-cta {
+    display: none;
+  }
+
+  /* Mobile menu: tighter spacing and slightly smaller type */
+  .mobile-menu ul {
+    gap: 1.1rem;
+  }
+  .mobile-link {
+    font-size: clamp(1.4rem, 5.5vw, 2.2rem);
+    opacity: 0.95;
+    padding: 0.1rem 0.2rem;
+  }
+
+  /* Slightly reduce hero padding on very small viewports */
+  .hero {
+    padding: 5.5rem 4% 3rem;
+  }
+
+  /* Center hero content and title on mobile so headings feel balanced */
+  .hero {
+    align-items: center;
+    text-align: center;
+  }
+  .hero-content {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .hero-content h1 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* Make the soft hero circle less dominant on mobile */
+  .hero-circle-fade {
+    width: 320px;
+    height: 320px;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -42%);
+    background: radial-gradient(
+      circle,
+      rgba(245, 198, 192, 0.18) 0%,
+      rgba(245, 198, 192, 0.06) 40%,
+      rgba(245, 198, 192, 0) 100%
+    );
+  }
+
+  /* Reduce overall hero height so the scroll hint appears without scrolling */
+  .hero {
+    min-height: 82vh;
+    justify-content: center;
+  }
+
+  /* Lift the scroll hint so it's visible above the fold */
+  .hero-scroll-hint {
+    bottom: 1.2rem;
+    opacity: 0.9;
+  }
+
+  /* Enlarge the background image on mobile and center it */
+  .hero::before {
+    background-size: 70vw auto;
+    background-position: top left;
+    background-position-x: left;
+    opacity: 0.2;
+  }
+
+  /* Slightly increase the hero title on mobile for balance */
+  .hero-content h1 {
+    font-size: clamp(1.8rem, 7vw, 3rem);
+    line-height: 1.04;
+    margin-bottom: 1.2rem;
+  }
+
+  /* Reduce hero subtext for mobile readability */
+  .hero-sub {
+    font-size: clamp(0.86rem, 3.6vw, 0.96rem);
+    max-width: 420px;
+    margin: 0.6rem auto 1.8rem;
+    opacity: 0.72;
+  }
+
+  /* Petals: slightly reduce size on mobile */
+  .petal {
+    width: 8px;
+    height: 12px;
+  }
+}
+
+/* Make the scroll hint more visible on the hero (first page) */
+.hero-scroll-hint {
+  opacity: 0.75;
+  color: var(--warm-charcoal);
+}
+.hero-scroll-hint .scroll-line {
+  width: 2px;
+  height: 40px;
+  background: linear-gradient(to bottom, var(--warm-charcoal), transparent);
+  border-radius: 2px;
 }
 
 .testi-role {
