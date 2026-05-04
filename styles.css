@@ -1658,11 +1658,15 @@ section
 .faq-a {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s var(--ease);
+  opacity: 0;
+  transition: max-height 0.5s var(--ease), opacity 0.5s var(--ease),
+    padding 0.5s var(--ease);
+  padding-bottom: 0;
 }
 
 .faq-a.open {
-  max-height: 300px;
+  max-height: 500px;
+  opacity: 1;
   padding-bottom: 1.5rem;
 }
 
